@@ -9,6 +9,12 @@
 - **Dataset**: LJ Speech dataset
 ![image](https://github.com/user-attachments/assets/379e05e0-2add-4a79-9c90-19bf420d71cd)
 
+
+## Demo
+A live demo of the model is available on Hugging Face Spaces:
+[TTS Model Demo](https://huggingface.co/spaces/Omarrran/tts_model_demo)
+![image](https://github.com/user-attachments/assets/57740df8-230c-474f-9a10-51ab4f780fb4)
+
 ## Training Details
 - **Training Data**: LJ Speech dataset (train split)
 - **Validation Data**: LJ Speech dataset (test split, 20% of total data)
@@ -17,6 +23,30 @@
 - **Gradient Accumulation Steps**: 8
 - **Learning Rate**: 1e-4
 - **Warm-up Steps**: 100
+# Metrics Explanation
+![image](https://github.com/user-attachments/assets/7fb696d6-c2ed-4c3e-b716-93c46a6faa45)
+
+| Metric | Trend | Explanation |
+|--------|-------|-------------|
+| eval/loss | Decreasing | Measures the model's error on the evaluation dataset. Decreasing trend indicates improving model performance. |
+| eval/runtime | Fluctuating, slightly decreasing | Time taken for evaluation. Minor fluctuations are normal, slight decrease may indicate optimization. |
+| eval/samples_per_second | Increasing | Number of samples processed per second during evaluation. Increase suggests improved processing efficiency. |
+| eval/steps_per_second | Increasing | Number of steps completed per second during evaluation. Increase indicates faster evaluation process. |
+| train/epoch | Linearly increasing | Number of times the entire dataset has been processed. Linear increase is expected. |
+| train/grad_norm | Decreasing with fluctuations | Magnitude of gradients. Decreasing trend with some fluctuations is normal, indicating stabilizing training. |
+| train/learning_rate | sliglty inreasing | Rate at which the model updates its parameters. Decrease over time is typical in many learning rate schedules. |
+| train/loss | Decreasing | Measures the model's error on the training dataset. Decreasing trend indicates the model is learning. |
+
+
+
+
+Key Differences and Improvements:
+1. Dataset: the above model is fine-tuned on the LJSpeech dataset, which improves its performance on English TTS tasks.
+2. Speaker Embeddings: incorporated speaker embeddings, which helps in maintaining speaker characteristics.
+3. Text Preprocessing: This model includes advanced text preprocessing, including number-to-word conversion and technical term handling.
+4. Training Optimizations: Used FP16 training and gradient checkpointing, which allows for more efficient training on GPUs.
+5. Regular Evaluation: Training process includes regular evaluation, which helps in monitoring the model's performance during training.
+
 
 ## Model Performance
 - **Evaluation Strategy**: Steps
@@ -52,10 +82,6 @@ vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
 # (See example in the notebook for full usage details)
 ```
 
-## Demo
-A live demo of the model is available on Hugging Face Spaces:
-[TTS Model Demo](https://huggingface.co/spaces/Omarrran/tts_model_demo)
-![image](https://github.com/user-attachments/assets/57740df8-230c-474f-9a10-51ab4f780fb4)
 
 ## Citation
 If you use this model, please cite:
@@ -69,6 +95,8 @@ If you use this model, please cite:
   howpublished = {\url{https://huggingface.co/Omarrran/speecht5_finetuned_emirhan_tr}},
 }
 ```
+
+
 
 ## Acknowledgements
 - Base SpeechT5 model by Microsoft
