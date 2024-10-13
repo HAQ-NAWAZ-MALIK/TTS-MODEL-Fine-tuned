@@ -40,7 +40,7 @@ A live demo of the model is available on Hugging Face Spaces:
 
 
 
-Key Differences and Improvements:
+## Key Differences and Improvements:
 1. Dataset: the above model is fine-tuned on the LJSpeech dataset, which improves its performance on English TTS tasks.
 2. Speaker Embeddings: incorporated speaker embeddings, which helps in maintaining speaker characteristics.
 3. Text Preprocessing: This model includes advanced text preprocessing, including number-to-word conversion and technical term handling.
