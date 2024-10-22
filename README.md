@@ -3,7 +3,7 @@
 
 ## Model Overview
 - **Base Model**: Microsoft SpeechT5 (microsoft/speecht5_tts)
-- **Fine-Tuned Model**: [Omarrran/speecht5_finetuned_emirhan_tr](https://huggingface.co/Omarrran/speecht5_finetuned_emirhan_tr)
+- **Fine-Tuned Model**: [Omarrran/speecht5_finetuned_emirhan_tr](https://huggingface.co/Omarrran/english_speecht5_finetuned/)
 - **Task**: Text-to-Speech (TTS)
 - **Language**: English
 - **Dataset**: LJ Speech dataset
