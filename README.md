@@ -10,9 +10,7 @@
 ![image](https://github.com/user-attachments/assets/379e05e0-2add-4a79-9c90-19bf420d71cd)
 
 
-## Demo
-A live demo of the model is available on Hugging Face Spaces:
-[TTS Model Demo](https://huggingface.co/spaces/Omarrran/tts_model_demo)
+
 ![image](https://github.com/user-attachments/assets/57740df8-230c-474f-9a10-51ab4f780fb4)
 
 ## Training Details
