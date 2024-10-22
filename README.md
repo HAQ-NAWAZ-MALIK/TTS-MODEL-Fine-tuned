@@ -72,7 +72,7 @@ The model can be used with the Hugging Face Transformers library:
 ```python
 from transformers import SpeechT5ForTextToSpeech, SpeechT5Processor, SpeechT5HifiGan
 
-model = SpeechT5ForTextToSpeech.from_pretrained("Omarrran/speecht5_finetuned_emirhan_tr")
+model = SpeechT5ForTextToSpeech.from_pretrained("Omarrran/english_speecht5_finetuned")
 processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
 vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
 
