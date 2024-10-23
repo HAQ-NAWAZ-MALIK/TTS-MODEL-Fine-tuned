@@ -1,6 +1,18 @@
 
 # SpeechT5 Fine-Tuned English TTS Model Report Card
 
+
+
+## ENGLISH FINETUNED MODEL
+# *Note:* 
+*This report was prepared as a task given by the IIT Roorkee PARIMAL intern program. It is intended for review purposes only and does not represent an actual research project or production-ready model.*
+
+
+
+| <span style="font-size: 20px; color: #2E86C1;">Resource Links</span> | <span style="font-size: 20px; color: #2ECC71;">**English Model**<br>[📚 Model Report Card](https://huggingface.co/Omarrran/turkish_finetuned_speecht5_tts/blob/main/README.md)<br><br>[💻 GitHub Repo](https://github.com/HAQ-NAWAZ-MALIK/TTS-MODEL-Fine-tuned)</span> | <span style="font-size: 20px; color: #E74C3C;">**Turkish Model**<br>[📚 Turkish Model Report Card](https://huggingface.co/Omarrran/turkish_finetuned_speecht5_tts/blob/main/README.md)<br>[💻 GitHub Repo](https://github.com/HAQ-NAWAZ-MALIK/turkish_finetuned_speecht5_tts/tree/main)<br></span> | <span style="font-size: 20px; color: #9B59B6;">**Quantized Model**<br>[📚 Quantizated Model ](https://huggingface.co/Omarrran/quantized_english_speecht5_finetune-tts)<br><br></span> |
+|--------------|--------------------------|-------------------------------------|-------------------------------------|
+
+
 ## Model Overview
 - **Base Model**: Microsoft SpeechT5 (microsoft/speecht5_tts)
 - **Fine-Tuned Model**: [Omarrran/speecht5_finetuned_emirhan_tr](https://huggingface.co/Omarrran/english_speecht5_finetuned/)
